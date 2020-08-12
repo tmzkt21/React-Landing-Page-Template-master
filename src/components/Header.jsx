@@ -22,6 +22,15 @@ export class Header extends Component {
                                     >
                                         Learn More
                                     </a>{" "}
+
+
+                                    <a href="Map"
+                                       className="btn btn-custom btn-lg page-scroll"
+                                    >
+                                        map
+                                    </a>{" "}
+
+
                                 </div>
                             </div>
                         </div>

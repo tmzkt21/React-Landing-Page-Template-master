@@ -35,7 +35,7 @@ export class Navigation extends Component {
               <a className="navbar-brand page-scroll" href="Search">
                 search  </a>{" "}
 
-              <a className="navbar-brand page-scroll" href="Contact">
+              <a className="navbar-brand page-scroll" href="ContactDetail">
                 contact  </a>{" "}
             </div>
 

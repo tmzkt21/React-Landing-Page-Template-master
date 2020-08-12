@@ -27,6 +27,8 @@ import {MemberManagement} from "../admin/Dashboard/components/memberManagement";
 import {Shipping} from "../admin/Dashboard/components/shipping";
 import {Chart} from "../admin/Dashboard/components/chart";
 import {ProductRegistration} from "../admin/Dashboard/components/productRegistration";
+import ContactDetail from "./ContactDetail";
+import ContactMap from "../contactMap/ContactMap";
 
 
 const Main = () => {
@@ -48,7 +50,11 @@ const Main = () => {
                     <Route path="/bread01" component={Bread01}/>
                     <Route path="/Order" component={Order}/>
                     <Route path="/mypage" component={Mypage}/>
-                    <Route path="/contact" component={Contact}/>
+                    <Route path="/ContactDetail" component={ContactDetail}/>
+                    <Route path="/ContactMap" component={ContactMap}/>
+
+
+
                     <ThemeProvider theme={theme}>
                         <Route path="/dashboard" component={Admin}/>
                         <Switch>

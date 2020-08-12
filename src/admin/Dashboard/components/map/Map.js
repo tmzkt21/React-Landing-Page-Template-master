@@ -14,7 +14,7 @@ const MAP_KEY='AIzaSyAdb4BpT5FdcmwNVkmh88DHC5n4SaWewRA';
 
 const libraries = ["places"];
 
-const MapTypes = {REQUEST: 'Map/REQUEST'}
+const MapTypes = {REQUEST: 'ContactMap/REQUEST'}
 const MapRequest = action => ({type: MapTypes.REQUEST, payload: action.payload})
 const MapReducer = ( state, action ) => {
   switch (action.type) {
@@ -475,7 +475,7 @@ export const Map = () => {
                 onLoad={onMapLoad}
               >
                 {/*{*/}
-                {/*  charging_station.map((store, i) => (*/}
+                {/*  charging_station.contactMap((store, i) => (*/}
                 {/*    <Marker*/}
                 {/*      key={i}*/}
                 {/*      position={{lat:store.x_coordinates, lng:store.y_coordinates}}*/}
@@ -488,7 +488,7 @@ export const Map = () => {
                 {/*  ))*/}
                 {/*}*/}
                 {/*{*/}
-                {/*  charging_station.map((store, i) => (*/}
+                {/*  charging_station.contactMap((store, i) => (*/}
                 {/*    <Marker*/}
                 {/*      key={i}*/}
                 {/*      position={{lat:store.x_coordinates, lng:store.y_coordinates}}*/}
