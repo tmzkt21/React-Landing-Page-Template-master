@@ -49,7 +49,7 @@ const Sidebar = props => {
     },
     {
       title: '배송지 조회',
-      href: '/contactMap',
+      href: '/Map',
       icon: <DashboardIcon />
     },
     {

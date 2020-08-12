@@ -31,17 +31,17 @@ const Dashboard = () => {
         >
           <Map />
         </Grid >
-        <Grid style={{position:'relative',left:"-38%",width:'30%',height:'100%',top:'340px'}}
+        <Grid style={{position:'relative',left:"-38%",width:'30%',height:'100%',top:'0px'}}
         >
           <Shipping />
         </Grid>
 
-        <Grid style={{position:"relative",bottom:'-15px',width:'30%',height:'30%'}}
+        <Grid style={{position:"relative",top:'-650px',width:'30%',height:'30%'}}
         >
           <MemberManagement />
         </Grid>
 
-        <Grid style={{position:'relative',left:"2%",width:'30%',height:'22%',top:'-320px'}}
+        <Grid style={{position:'relative',left:"2%",width:'30%',height:'22%',top:'-620px'}}
         >
           <ProductRegistration />
         </Grid>
