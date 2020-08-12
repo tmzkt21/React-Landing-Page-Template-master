@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-export class Features extends Component {
-  render() {
+export const Features = props => {
     return (
       <div id="features" className="text-center">
         <div className="container">
@@ -9,8 +8,8 @@ export class Features extends Component {
             <h2>Features</h2>
           </div>
           <div className="row">
-            {this.props.data
-              ? this.props.data.map((d,i) => (
+            {props.data
+              ? props.data.map((d,i) => (
                   <div  key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
                     {" "}
                     <i className={d.icon}></i>
@@ -23,7 +22,6 @@ export class Features extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Features;

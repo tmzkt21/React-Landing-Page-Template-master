@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Contact extends Component {
-  render() {
+export const Contact = props => {
     return (
       <div>
         <div id="contact">
@@ -67,7 +66,7 @@ export class Contact extends Component {
                   <span>
                     <i className="fa fa-map-marker"></i> Address
                   </span>
-                  {this.props.data ? this.props.data.address : "loading"}
+                  {props.data ? props.data.address : "loading"}
                 </p>
               </div>
               <div className="contact-item">
@@ -75,7 +74,7 @@ export class Contact extends Component {
                   <span>
                     <i className="fa fa-phone"></i> Phone
                   </span>{" "}
-                  {this.props.data ? this.props.data.phone : "loading"}
+                  {props.data ? props.data.phone : "loading"}
                 </p>
               </div>
               <div className="contact-item">
@@ -83,7 +82,7 @@ export class Contact extends Component {
                   <span>
                     <i className="fa fa-envelope-o"></i> Email
                   </span>{" "}
-                  {this.props.data ? this.props.data.email : "loading"}
+                  {props.data ? props.data.email : "loading"}
                 </p>
               </div>
             </div>
@@ -93,18 +92,18 @@ export class Contact extends Component {
                   <ul>
                     <li>
                       <a
-                        href={this.props.data ? this.props.data.facebook : "/"}
+                        href={props.data ? props.data.facebook : "/"}
                       >
                         <i className="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href={this.props.data ? this.props.data.twitter : "/"}>
+                      <a href={props.data ? props.data.twitter : "/"}>
                         <i className="fa fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href={this.props.data ? this.props.data.youtube : "/"}>
+                      <a href={props.data ? props.data.youtube : "/"}>
                         <i className="fa fa-youtube"></i>
                       </a>
                     </li>
@@ -126,7 +125,6 @@ export class Contact extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Contact;

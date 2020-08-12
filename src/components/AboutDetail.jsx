@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Navigation from "./Navigation";
 
-export class AboutDetail extends Component {
-  render() {
+export const AboutDetail = () => {
     return (
         <div id="about">
           <Navigation />
@@ -65,7 +64,6 @@ export class AboutDetail extends Component {
         </div>
       </div>
     )
-  }
 }
 
 export default AboutDetail

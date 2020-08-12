@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-export class Gallery extends Component {
-  render() {
+export const Gallery = () => {
     return (
       <div id="portfolio" className="text-center">
         <div className="container">
@@ -208,7 +207,6 @@ export class Gallery extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Gallery;
