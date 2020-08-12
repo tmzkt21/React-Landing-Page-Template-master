@@ -1,0 +1,87 @@
+.form {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    margin-bottom: 30px;
+    border-width: 1px 0px;
+    border-image: initial;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+
+}
+
+
+.fbFaMk {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+.iyyyjc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 0px 0px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+.button{
+    border-color: transparent;
+border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; margin-bottom: -1px;
+}
+
+.h3-bread{
+    padding: 20px;
+}
+
+.bCmhqn {
+    margin: 0px auto;
+}
+
+.hdQSlB {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    margin-bottom: 30px;
+    border-width: 1px 0px;
+    border-image: initial;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.gaukuF {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(169, 169, 169);
+    padding: 20px 0px 10px;
+}
+
+.bCmhqn {
+    margin-top: 60px;
+}
+.ftsUDw {
+    vertical-align: middle;
+    padding: 10px;
+}
