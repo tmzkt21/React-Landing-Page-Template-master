@@ -29,6 +29,7 @@ import {Chart} from "../admin/Dashboard/components/chart";
 import {ProductRegistration} from "../admin/Dashboard/components/productRegistration";
 import ContactDetail from "./ContactDetail";
 import ContactMap from "../contactMap/ContactMap";
+import Pages from "../bread/Pages";
 
 
 const Main = () => {
@@ -52,6 +53,7 @@ const Main = () => {
                     <Route path="/mypage" component={Mypage}/>
                     <Route path="/ContactDetail" component={ContactDetail}/>
                     <Route path="/ContactMap" component={ContactMap}/>
+                    <Route path="/Pages" component={Pages}/>
 
 
 

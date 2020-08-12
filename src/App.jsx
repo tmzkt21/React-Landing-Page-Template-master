@@ -20,10 +20,10 @@ export const App = () => {
         return (
             <div>
                 <Navigation />
-                <Header data={landingPageData.Header} />
-                <Features data={landingPageData.Features} />
-                <About data={landingPageData.About} />
-                <Contact data={landingPageData.Contact} />
+                <Header data={JsonData.Header} />
+                <Features data={JsonData.Features} />
+                <About data={JsonData.About} />
+                <Contact data={JsonData.Contact} />
             </div>
         )
 }

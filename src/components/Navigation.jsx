@@ -32,6 +32,9 @@ export const Navigation = () => {
               <a className="navbar-brand page-scroll" href="Breads">
                 LIST   </a>{" "}
 
+              <a className="navbar-brand page-scroll" href="Pages">
+                LIST   </a>{" "}
+
               <a className="navbar-brand page-scroll" href="Search">
                 search  </a>{" "}
 
