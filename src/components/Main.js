@@ -30,6 +30,7 @@ import {ProductRegistration} from "../admin/Dashboard/components/productRegistra
 import ContactDetail from "./ContactDetail";
 import ContactMap from "../contactMap/ContactMap";
 import Pages from "../pagination/Pages";
+import LoginForm from "../member/LoginForm";
 
 
 const Main = () => {
@@ -54,6 +55,7 @@ const Main = () => {
                     <Route path="/ContactDetail" component={ContactDetail}/>
                     <Route path="/ContactMap" component={ContactMap}/>
                     <Route path="/Pages" component={Pages}/>
+                    <Route path="/LoginForm" component={LoginForm}/>
                     <Redirect from="/message" to="/" /> {/* 주소/message 로 접속 시 주소/posts 로 리디렉션 */}
 
 
