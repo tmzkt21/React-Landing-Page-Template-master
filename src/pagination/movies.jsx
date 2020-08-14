@@ -3,8 +3,8 @@ import ListGroup from './common/listGroup';
 import Pagination from './common/pagination';
 import { getMovies } from './services/movieService';
 import { getGenres } from './services/genreService';
-import { paginate } from '../utils/paginate';
-import MoviesTable from '../bread/moviesTable';
+import { paginate } from './utils/paginate';
+import MoviesTable from './moviesTable';
 import _ from 'lodash';
 
 export default class Movies extends Component {

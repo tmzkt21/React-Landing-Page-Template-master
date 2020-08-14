@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Table from '../components/common/table';
-import Like from '../components/common/like';
+import Table from './common/table';
+import Like from './common/like';
 
 // 역정렬 이벤트를 부모 컴포넌트에게 알리기 위해 클래스형 컴포넌트로 구현
 // (함수형 컴포넌트로 구현한 후 부모 컴포넌트에서 역정렬을 시도하면 DOM에 반영되지 않음)

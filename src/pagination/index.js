@@ -1,0 +1,1 @@
+export {default as Pages} from '../pagination/Pages'

@@ -1,5 +1,5 @@
 import React from 'react';
-import Movies from '../components/movies';
+import Movies from './movies';
 
 function Pages() {
     return (

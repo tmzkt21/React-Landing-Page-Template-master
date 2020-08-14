@@ -15,7 +15,7 @@ import {SignUp} from "../member";
 import {AboutDetail} from "./AboutDetail";
 import Bread01 from "../details/Bread01";
 import Order from "../order/Order";
-import Mypage from "../member/Mypage";
+import Mypage from "../mypage/Mypage";
 import Admin from "../admin/Routes";
 import theme from "../admin/theme";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
@@ -29,7 +29,7 @@ import {Chart} from "../admin/Dashboard/components/chart";
 import {ProductRegistration} from "../admin/Dashboard/components/productRegistration";
 import ContactDetail from "./ContactDetail";
 import ContactMap from "../contactMap/ContactMap";
-import Pages from "../bread/Pages";
+import Pages from "../pagination/Pages";
 
 
 const Main = () => {

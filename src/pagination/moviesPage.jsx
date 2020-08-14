@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Pagination from '../components/common/pagination';
-import { paginate } from '../utils/paginate';
+import Pagination from './common/pagination';
+import { paginate } from './utils/paginate';
 
 export default class MoviesPage extends Component {
     getMovies = () => {
