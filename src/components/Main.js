@@ -15,7 +15,7 @@ import {SignUp} from "../member";
 import {AboutDetail} from "./AboutDetail";
 import Bread01 from "../details/Bread01";
 import Order from "../order/Order";
-import Mypage from "../mypage/Mypage";
+import MyPage from "../mypage/MyPage";
 import Admin from "../admin/Routes";
 import theme from "../admin/theme";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
@@ -50,10 +50,11 @@ const Main = () => {
                     <Route path="/aboutDetail" component={AboutDetail}/>
                     <Route path="/bread01" component={Bread01}/>
                     <Route path="/Order" component={Order}/>
-                    <Route path="/mypage" component={Mypage}/>
+                    <Route path="/MyPage" component={MyPage}/>
                     <Route path="/ContactDetail" component={ContactDetail}/>
                     <Route path="/ContactMap" component={ContactMap}/>
                     <Route path="/Pages" component={Pages}/>
+                    <Redirect from="/message" to="/" /> {/* 주소/message 로 접속 시 주소/posts 로 리디렉션 */}
 
 
 
