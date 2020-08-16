@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom'
+import {Provider} from 'react-redux';
 import Services from './services';
 import Testimonials from './testimonials';
 import Team from './Team';
 import Contact from './contact';
-//import $ from 'jquery';
 import {Breads} from "../bread/Breads";
 import {Features} from "./Features";
 import {About} from './About';
@@ -30,10 +30,11 @@ import {ProductRegistration} from "../admin/Dashboard/components/productRegistra
 import ContactDetail from "./ContactDetail";
 import ContactMap from "../contactMap/ContactMap";
 import Pages from "../pagination/Pages";
-
-
+import { createStore } from 'redux'
+import rootReducer from '../reducers'
 const Main = () => {
-    return <div>
+    return <>
+        <Provider store = {createStore(rootReducer)}>
         <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component = {App}/>
@@ -94,7 +95,8 @@ const Main = () => {
                     </ThemeProvider>
                 </Switch>
         </BrowserRouter>
-    </div>
+        </Provider>
+    </>
 
 
 }
