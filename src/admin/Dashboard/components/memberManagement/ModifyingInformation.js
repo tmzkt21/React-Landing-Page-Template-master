@@ -18,7 +18,7 @@ const ModifyingInformation = () => {
             phone: phoneNumber,
             email: email
         }
-        axios.post(`http://localhost:8080/user/changeInfo/${userId}`,userData)
+        axios.patch(`http://localhost:8080/user/changeInfo/${userId}`,userData)
             .then((res)=>{
                     alert("정보수정완료")
                     history.push("/dashboard")
