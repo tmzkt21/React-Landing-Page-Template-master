@@ -5,7 +5,7 @@ import {MemberManagementReducer} from '../admin/Dashboard/components/memberManag
 import {ProductRegistrationReducer} from '../admin/Dashboard/components/productRegistration'
 import {SigninReducer} from "../member";
 import {SignupReducer} from "../member";
-import MypageReducer from "../mypage/MyPage";
+import {MypageReducer} from '../mypage/index';
 
 const rootReducer  = combineReducers({
     // ChartReducer,
