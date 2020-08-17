@@ -54,6 +54,11 @@ export const Navigation = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="LoginForm" className="page-scroll">
+                    loginform
+                  </a>
+                </li>
+                <li>
                   <a href="Signup" className="page-scroll">
                     join
                   </a>

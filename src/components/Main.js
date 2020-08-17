@@ -15,7 +15,7 @@ import {SignUp} from "../member";
 import {AboutDetail} from "./AboutDetail";
 import Bread01 from "../details/Bread01";
 import Order from "../order/Order";
-import Mypage from "../mypage/Mypage";
+import MyPage from "../mypage/MyPage";
 import Admin from "../admin/Routes";
 import theme from "../admin/theme";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
@@ -30,8 +30,14 @@ import {ProductRegistration} from "../admin/Dashboard/components/productRegistra
 import ContactDetail from "./ContactDetail";
 import ContactMap from "../contactMap/ContactMap";
 import Pages from "../pagination/Pages";
+
 import { createStore } from 'redux'
 import rootReducer from '../reducers'
+
+import LoginForm from "../member/LoginForm";
+
+
+
 const Main = () => {
     return <>
         <Provider store = {createStore(rootReducer)}>
@@ -51,10 +57,12 @@ const Main = () => {
                     <Route path="/aboutDetail" component={AboutDetail}/>
                     <Route path="/bread01" component={Bread01}/>
                     <Route path="/Order" component={Order}/>
-                    <Route path="/mypage" component={Mypage}/>
+                    <Route path="/MyPage" component={MyPage}/>
                     <Route path="/ContactDetail" component={ContactDetail}/>
                     <Route path="/ContactMap" component={ContactMap}/>
                     <Route path="/Pages" component={Pages}/>
+                    <Route path="/LoginForm" component={LoginForm}/>
+                    <Redirect from="/message" to="/" /> {/* 주소/message 로 접속 시 주소/posts 로 리디렉션 */}
 
 
 
