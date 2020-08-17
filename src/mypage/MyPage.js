@@ -1,7 +1,6 @@
 import React from "react";
 import {PageTemplate} from "../components";
 import styled from "styled-components";
-import "./MyPageConainer";
 import Route from "react-router-dom/es/Route";
 import OrderDetail from "./OrderDetail";
 import {Link} from "react-router-dom"
