@@ -4,8 +4,32 @@ import './signin.css'
 import axios from 'axios';
 import { useHistory, Link } from 'react-router-dom';
 
+const SigninTypes= {REQUEST: 'Signin/REQUEST', SUCCESS: 'Signin/SUCCESS', FAIL: 'Signin/FAIL'}
+const SigninRequest = action => ({types: SigninTypes.REQUEST, payload: action.payload})
+const SigninSuccess = action => ({types: SigninTypes.SUCCESS, payload: action.payload})
+const SigninFail = action => ({types: SigninTypes.FAIL, payload: action.payload})
 
-const Signin = () => {
+const SigninReducer = (state, action) => {
+    switch (action.type) {
+        case SigninTypes.REQUEST:
+            return {
+                ...state, payload: action.payload
+            }
+        case SigninTypes.SUCCESS:
+            return {
+                ...state, payload: action.payload
+            }
+        case SigninTypes.FAIL:
+            return {
+                ...state, payload: action.payload
+            }
+        default:
+            return state
+    }
+}
+
+
+export const Signin = () => {
     const [userId,setUserId] = useState('')
     const [password,setPassword] = useState('')
 
@@ -17,7 +41,7 @@ const Signin = () => {
             userId: userId,
             password: password
         }
-        axios.post(`http://localhost:8080/user/signIn`, userData)
+        axios.post(`http://localhost:8080/user/SignIn`, userData)
             .then(response => {
                     alert("로그인 성공 !")
                     console.log(JSON.stringify(response.data))
@@ -33,7 +57,7 @@ const Signin = () => {
 
     }
     return <>
-        <PageTemplate> <section className="signin">
+        <PageTemplate> <section className="Signin">
 
             <div className="h3-bread">&nbsp;</div>
             <form>
@@ -69,4 +93,4 @@ const Signin = () => {
 
 }
 
-export default Signin
+export default SigninReducer

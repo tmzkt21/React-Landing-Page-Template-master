@@ -1,3 +1,3 @@
-export {default as Signin} from './Signin'
-export {default as SignUp} from './Signup'
+export {Signin, default as SigninReducer} from './Signin'
+export {Signup, default as SignupReducer} from './Signup'
 export {default as LoginForm} from './LoginForm'

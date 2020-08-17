@@ -24,7 +24,7 @@ export const Header = props => {
                                     </a>{" "}
 
 
-                                    <a href="Map"
+                                    <a href="ContactMap"
                                        className="btn btn-custom btn-lg page-scroll"
                                     >
                                         map

@@ -3,7 +3,32 @@ import { PageTemplate} from "../components";
 import { useHistory, Link } from 'react-router-dom';
 import './signup.css'
 import axios from 'axios'
-const Signup = () => {
+
+const SignupTypes = {REQUEST: 'Signup/REQUEST', SUCCESS: 'Signup/SUCCESS', FAIL: 'Signup/FAIL'}
+const SignupRequest = action => ({types: SignupTypes.REQUEST, payload: action.payload})
+const SignupSuccess = action => ({types: SignupTypes.SUCCESS, payload: action.payload})
+const SignupFail = action => ({types: SignupTypes.FAIL, payload: action.payload})
+
+const SignupReducer = (state, action) => {
+    switch (action.type) {
+        case SignupTypes.REQUEST:
+            return {
+                ...state, payload: action.payload
+            }
+        case SignupTypes.SUCCESS:
+            return {
+                ...state, payload: action.payload
+            }
+        case SignupTypes.FAIL:
+            return {
+                ...state, payload: action.payload
+            }
+        default:
+            return state
+    }
+}
+
+export const Signup = () => {
     // const classes = useStyles();
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
@@ -80,4 +105,4 @@ const Signup = () => {
     </>
 
 }
-export default Signup
+export default SignupReducer

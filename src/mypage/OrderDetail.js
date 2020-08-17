@@ -31,31 +31,34 @@ const PageDiv = styled.div`
     }
 `;
 
-const OrderDetail = () =>
+const OrderDetail = () => {
+    return <>
 
 
-    <center>
-        <article>
-        <BuyListTable>
-            <thead>
-                <tr>
-                    <th scope="col">num 주문번호</th>
-                    <th scope="col">Name(option) 상품이름</th>
-                    <th scope="col">Price 가격</th>
-                    <th scope="col">Quantity 수량</th>
-                    <th scope="col">shippingStatus 배송현황</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </BuyListTable>
+        <center>
+            <article>
+                <BuyListTable>
+                    <thead>
+                    <tr>
+                        <th scope="col">num 주문번호</th>
+                        <th scope="col">Name(option) 상품이름</th>
+                        <th scope="col">Price 가격</th>
+                        <th scope="col">Quantity 수량</th>
+                        <th scope="col">shippingStatus 배송현황</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </BuyListTable>
 
-            <PageDiv>
-                <Pagination
+                <PageDiv>
+                    <Pagination
 
-                />
-            </PageDiv>
-    </article>
-    </center>
+                    />
+                </PageDiv>
+            </article>
+        </center>
+    </>
+}
 
 
 export default OrderDetail

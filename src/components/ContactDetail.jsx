@@ -36,7 +36,7 @@ const ContactDetail = () => <PageTemplate> <section className="signup">
                                             <li><span>· 전화번호</span> 070-4405-0723</li>
                                         </ul>
                                         <div className="map-box">
-
+                                            <ContactMap></ContactMap>
 
                                         </div>
                                     </div>

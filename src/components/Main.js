@@ -10,12 +10,12 @@ import {Features} from "./Features";
 import {About} from './About';
 import {App} from '../App';
 import Search from "../search/Search";
-import Signin from "../member/Signin";
-import {SignUp} from "../member";
+import {Signin} from "../member/Signin";
+import {Signup} from "../member";
 import {AboutDetail} from "./AboutDetail";
 import Bread01 from "../details/Bread01";
 import Order from "../order/Order";
-import MyPage from "../mypage/MyPage";
+import {MyPage} from "../mypage/MyPage";
 import Admin from "../admin/Routes";
 import theme from "../admin/theme";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
@@ -53,7 +53,7 @@ const Main = () => {
                     <Route path="/breads" component = {Breads} />
                     <Route path="/search" component={Search}/>
                     <Route path="/signin" component={Signin}/>
-                    <Route path="/signup" component={SignUp}/>
+                    <Route path="/signup" component={Signup}/>
                     <Route path="/aboutDetail" component={AboutDetail}/>
                     <Route path="/bread01" component={Bread01}/>
                     <Route path="/Order" component={Order}/>

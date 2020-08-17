@@ -7,8 +7,6 @@ import {Link} from "react-router-dom"
 import Navigation from "../components/Navigation";
 import EditProfile from "./EditProfile";
 
-
-
 const MyNavDiv = styled.div`
     
     padding: 30px 0 0; 
@@ -31,39 +29,58 @@ const MyNavDiv = styled.div`
     }
 `;
 
+const MypageTypes= {REQUEST: 'Mypage/REQUEST', SUCCESS: 'Mypage/SUCCESS', FAIL: 'Mypage/FAIL'}
+const MypageRequest = action => ({types: MypageTypes.REQUEST, payload: action.payload})
+const MypageSuccess = action => ({types: MypageTypes.SUCCESS, payload: action.payload})
+const MypageFail = action => ({types: MypageTypes.FAIL, payload: action.payload})
 
-
-
-function clickTab(cart) {
-    return undefined;
+const MypageReducer = (state, action) => {
+    switch (action.type) {
+        case MypageTypes.REQUEST:
+            return {
+                ...state, payload: action.payload
+            }
+        case MypageTypes.SUCCESS:
+            return {
+                ...state, payload: action.payload
+            }
+        case MypageTypes.FAIL:
+            return {
+                ...state, payload: action.payload
+            }
+        default:
+            return state
+    }
 }
 
-let tab;
 
-const MyPage = () => <PageTemplate> <section className="signin">
+export const MyPage = () => {
+    return <>
+    <PageTemplate>
+        <section className="signin">
 
-    <h1 className="h3-bread"> </h1>
-    <div className="gaukuF"><h2 className="sc-jTzLTM btRZwy">My Page</h2>
-        <button type="button" className="sc-dnqmqq qrXFy">LogOut</button>
-    </div>
+            <h1 className="h3-bread"></h1>
+            <div className="gaukuF"><h2 className="sc-jTzLTM btRZwy">My Page</h2>
+                <button type="button" className="sc-dnqmqq qrXFy">LogOut</button>
+            </div>
 
-    <MyNavDiv>
-    <p><Link to="/MyPage/OrderDetail">OrderList</Link></p>
-    <p><Link to="/MyPage/EditProfile">Edit Profile</Link></p>
-    </MyNavDiv>
+            <MyNavDiv>
+                <p><Link to="/MyPage/OrderDetail">OrderList</Link></p>
+                <p><Link to="/MyPage/EditProfile">Edit Profile</Link></p>
+            </MyNavDiv>
 
-    {/* 이중 라우팅 */}
-    <Route path="/MyPage/OrderDetail" component={OrderDetail}/>
-    <Route path="/MyPage/EditProfile" component={EditProfile} />
-
-
-
-
+            {/* 이중 라우팅 */}
+            <Route path="/MyPage/OrderDetail" component={OrderDetail}/>
+            <Route path="/MyPage/EditProfile" component={EditProfile}/>
 
 
-</section></PageTemplate>
 
-export default MyPage
+    </section></PageTemplate>
+    </>
+
+}
+
+export default MypageReducer
 
 
 
