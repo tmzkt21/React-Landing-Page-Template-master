@@ -7,6 +7,7 @@ import {Shipping} from "./Dashboard/components/shipping/index";
 import {Chart} from "./Dashboard/components/chart/index";
 import {ProductRegistration} from "./Dashboard/components/productRegistration/index";
 import {MemberManagement} from "./Dashboard/components/memberManagement/index";
+import ModifyingInformation from "./Dashboard/components/memberManagement/ModifyingInformation";
 
 
 const Admin = () => {
@@ -53,6 +54,12 @@ const Admin = () => {
         layout={MainLayout}
         path="/productRegistration"
       />
+        <RouteWithLayout
+            component={ModifyingInformation}
+            exact
+            layout={MainLayout}
+            path="/modifyingInformation"
+        />
     </Switch>
   );
 };

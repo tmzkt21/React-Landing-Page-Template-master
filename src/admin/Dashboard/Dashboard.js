@@ -27,7 +27,7 @@ const Dashboard = () => {
         >
           <Chart />
         </Grid>
-        <Grid style={{position:'relative',left:"33%",width:'40%',height:'1000px'}}
+        <Grid style={{position:'relative',left:"33%",width:'40%',height:'1200px'}}
         >
           <Map />
         </Grid >

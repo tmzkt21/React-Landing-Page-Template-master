@@ -41,7 +41,7 @@ const Signin = () => {
 
                 <div className="form-group">
                     <label>UserId</label>
-                    <input type="email" className="form-control" onChange={e => setUserId(e.target.value)} placeholder="Enter email" />
+                    <input type="userId" className="form-control" onChange={e => setUserId(e.target.value)} placeholder="Enter userId" />
                 </div>
 
                 <div className="form-group">

@@ -32,6 +32,7 @@ import ContactMap from "../contactMap/ContactMap";
 import Pages from "../pagination/Pages";
 import { createStore } from 'redux'
 import rootReducer from '../reducers'
+import ModifyingInformation from "../admin/Dashboard/components/memberManagement/ModifyingInformation";
 const Main = () => {
     return <>
         <Provider store = {createStore(rootReducer)}>
@@ -90,6 +91,12 @@ const Main = () => {
                                 exact
                                 layout={MainLayout}
                                 path="/productRegistration"
+                            />
+                            <RouteWithLayout
+                                component={ModifyingInformation}
+                                exact
+                                layout={MainLayout}
+                                path="/modifyingInformation"
                             />
                         </Switch>
                     </ThemeProvider>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ContactMap from "../contactMap/ContactMap";
 
 export const Header = props => {
 
@@ -24,7 +25,7 @@ export const Header = props => {
                                     </a>{" "}
 
 
-                                    <a href="Map"
+                                    <a href="ContactMap"
                                        className="btn btn-custom btn-lg page-scroll"
                                     >
                                         map

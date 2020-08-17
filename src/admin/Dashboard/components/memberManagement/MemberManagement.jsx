@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import {
   Button,
@@ -53,8 +52,7 @@ export const MemberManagement = () => {
               <tr>honggildong</tr>
             </td>
             <td>메모</td>
-            <input type="button" value={"수정"} />
-            <input type="button" value={"탈퇴"}  />
+            <Button type="button" value="회원정보수정" href="/modifyingInformation">회원정보수정</Button>
           </tr>
           <tr>
             <input style={{width : '14px', height : '15px', margin:'23px'}} type="checkbox"/>
@@ -63,8 +61,7 @@ export const MemberManagement = () => {
               <div>kimyousin</div>
             </td>
             <td>메모</td>
-            <input type="button" value={"수정"} />
-            <input type="button" value={"탈퇴"}  />
+            <Button type="button" value="회원정보수정" href="/modifyingInformation">회원정보수정</Button>
           </tr>
           <tr>
             <input style={{width : '14px', height : '15px', margin:'23px'}} type="checkbox"/>
@@ -73,8 +70,7 @@ export const MemberManagement = () => {
               <div>sinsa</div>
             </td>
             <td>메모</td>
-            <input type="button" value={"수정"} />
-            <input type="button" value={"탈퇴"}  />
+            <Button type="button" value="회원정보수정" href="/modifyingInformation">회원정보수정</Button>
           </tr>
           <tr>
             <input style={{width : '14px', height : '15px', margin:'23px'}} type="checkbox"/>
@@ -83,8 +79,7 @@ export const MemberManagement = () => {
               <div>sunsin</div>
             </td>
             <td>메모</td>
-            <input type="button" value={"수정"}  />
-            <input type="button" value={"탈퇴"}  />
+            <Button type="button" value="회원정보수정" href="/modifyingInformation">회원정보수정</Button>
           </tr>
           <tr>
             <input style={{width : '14px', height : '15px', margin:'23px'}} type="checkbox" />
@@ -93,10 +88,8 @@ export const MemberManagement = () => {
               <div>lsg</div>
             </td>
             <td>메모</td>
-            <input type="button" value={"수정"} />
-            <input type="button" value={"탈퇴"}  />
+            <Button type="button" value="회원정보수정" href="/modifyingInformation">회원정보수정</Button>
           </tr>
-          {/*<a className="btn btn-default">글쓰기</a>*/}
 
         </table>
         <CardActions className={classes.actions}>
