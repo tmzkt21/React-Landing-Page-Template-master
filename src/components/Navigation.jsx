@@ -54,6 +54,11 @@ export const Navigation = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="LoginForm" className="page-scroll">
+                    loginform
+                  </a>
+                </li>
+                <li>
                   <a href="Signup" className="page-scroll">
                     join
                   </a>
@@ -64,7 +69,7 @@ export const Navigation = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="Mypage" className="page-scroll">
+                  <a href="MyPage" className="page-scroll">
                     mypage
                   </a>
                 </li>
