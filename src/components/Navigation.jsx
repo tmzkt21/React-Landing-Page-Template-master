@@ -69,7 +69,7 @@ export const Navigation = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="Mypage" className="page-scroll">
+                  <a href="MyPage" className="page-scroll">
                     mypage
                   </a>
                 </li>
