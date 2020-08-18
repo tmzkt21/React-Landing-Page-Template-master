@@ -1,3 +1,3 @@
 export {default as Bread} from './Bread'
-export {Breads, default as BreadsReducer} from './Breads'
-export {default as Bread01} from './Bread01'
+export {default as breadsReducer} from './Breads'
+export {default as Bread01} from '../details/Bread01'

@@ -1,32 +1,10 @@
 import React from "react";
 import {Route, BrowserRouter, Switch} from 'react-router-dom'
-import '../assets/bread.css'
-import Navigation from "../home/Navigation";
+import './breads.css'
+import Navigation from "../components/Navigation";
 //import Bread01 from "../details/Bread01";
 
-const BreadsTypes= {REQUEST: 'Signin/REQUEST', SUCCESS: 'Signin/SUCCESS', FAIL: 'Signin/FAIL'}
-const BreadsRequest = action => ({types: BreadsTypes.REQUEST, payload: action.payload})
-const BreadsSuccess = action => ({types: BreadsTypes.SUCCESS, payload: action.payload})
-const BreadsFail = action => ({types: BreadsTypes.FAIL, payload: action.payload})
 
-const BreadsReducer = (state, action) => {
-    switch (action.type) {
-        case BreadsTypes.REQUEST:
-            return {
-                ...state, payload: action.payload
-            }
-        case BreadsTypes.SUCCESS:
-            return {
-                ...state, payload: action.payload
-            }
-        case BreadsTypes.FAIL:
-            return {
-                ...state, payload: action.payload
-            }
-        default:
-            return state
-    }
-}
 
 export const Breads = () =>
     <div>
@@ -70,7 +48,7 @@ export const Breads = () =>
         </div>
     </div>
 
-export default BreadsReducer
+export default Breads
 
 
 
