@@ -13,7 +13,7 @@ export const App = () => {
     const getlandingPageData = () => {
         setLandingPageData(JsonData)
     }
-
+//
     const componentDidMount = () => {
         getlandingPageData();
     }
