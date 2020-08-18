@@ -486,7 +486,7 @@ var requestFrame = (function () {
  */
 function pulse_(x) {
     var val, start, expx;
-    // test
+    // vendor-test
     x = x * options.pulseScale;
     if (x < 1) { // acceleartion
         val = x - (1 - Math.exp(-x));

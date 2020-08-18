@@ -1,10 +1,10 @@
 import React, {Component, useState} from 'react'
-import Navigation from './components/Navigation';
-import Header from './components/Header';
-import Features from './components/Features';
-import About from './components/About'
-import Contact from './components/contact';
-import JsonData from './data/data.json';
+import Navigation from './home/Navigation';
+import Header from './home/Header';
+import Features from './home/Features';
+import About from './home/About'
+import Contact from './home/contact';
+import JsonData from './vendor/data.json';
 
 export const App = () => {
 

@@ -2,11 +2,15 @@ import React from 'react';
 import { Switch, Redirect } from 'react-router-dom';
 import RouteWithLayout from "./RouteWithLayout";
 import Dashboard from "./Dashboard";
-import { Main as MainLayout } from './layouts';
-import {Shipping} from "./Dashboard/components/shipping/index";
-import {Chart} from "./Dashboard/components/chart/index";
-import {ProductRegistration} from "./Dashboard/components/productRegistration/index";
-import {MemberManagement} from "./Dashboard/components/memberManagement/index";
+import MainLayout from './AdminMain';
+// import {Shipping} from "./shipping/index";
+// import {Chart} from "./chart/index";
+// import {ProductRegistration} from "./productRegistration/index";
+// import {MemberManagement} from "./memberManagement/index";
+import {Chart} from "../chart/Chart";
+import {MemberManagement} from "./MemberManagement";
+import {ProductRegistration} from "./ProductRegistration";
+import {Shipping} from "../shipping/Shipping";
 
 
 const Admin = () => {
